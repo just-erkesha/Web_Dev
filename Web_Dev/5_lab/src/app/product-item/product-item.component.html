@@ -1,0 +1,25 @@
+
+<div class="main">
+    <div *ngFor="let product of products">
+        <div *ngIf="product.category == selectedProduct">
+      <h3>
+        <a href="{{ product.url }}" [title]="product.name + ' details'">
+          {{ product.name }}
+        </a>
+      </h3>
+      <img src="{{product.image}}" style="width: 25%; height: 25%;">
+    
+      <p *ngIf="product.description">Description: {{ product.description }}</p>
+      <p *ngIf="product.price">Price: {{ product.price }}</p>
+      <p *ngIf="product.price">Rating: {{ product.rating }}</p>
+
+      <button type="button" (click)="like(product)">Like: {{product.like}}</button>
+      <a href="https://t.me/share/url?url={{ product.url }}">
+        <button type="button" (click)="share()">Share</button>
+      </a>
+      
+      <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+      <button type="button" (click)="removeProd(product)">Remove</button>
+    </div>
+    </div>
+    </div>

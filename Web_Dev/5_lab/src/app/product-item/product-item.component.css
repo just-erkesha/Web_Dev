@@ -1,0 +1,28 @@
+.main {margin-left: 190px;}
+
+.sidenav {
+    position: fixed;
+    top: 100px;;
+    background: #fff;
+  }
+  .sidenav h3{
+    padding: 10px 8px 10px 15px;
+  }
+  .sidenav a {
+    padding: 10px 8px 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+
+.main {
+  margin-left: 270px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}

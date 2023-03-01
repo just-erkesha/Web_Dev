@@ -1,0 +1,10 @@
+
+  <div class="sidenav" style="width:15%">
+    <h3 class="home">Kitchen Appliances</h3>
+    <button type="button" (click)="onSelect('foodpro')">Food Processor</button><br><br>
+    <button type="button" (click)="onSelect('blend')">Blenders</button><br><br>
+    <button type="button" (click)="onSelect('toast')">Toasters</button> <br><br>
+    <button type="button" (click)="onSelect('juice')">Juicers</button><br><br>
+
+  </div>
+ <app-product-item [selectedProduct]=selectedProduct></app-product-item>
