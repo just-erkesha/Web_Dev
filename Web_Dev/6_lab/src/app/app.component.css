@@ -1,0 +1,9 @@
+a.pages:link, a.pages:visited{
+background-color:rgba(135, 206, 250, 0.939);
+padding: 10px 10px;
+margin: 10px;
+text-align: center;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+}
